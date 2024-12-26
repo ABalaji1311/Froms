@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+.error { 
+    color: red; 
+}
+body{
+    background-image:url(img1.jpg);
+    background-repeat: no-repeat;
+    display: flex;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    background-size: cover;
+}
+.container{
+    border: 1px solid white;
+    box-shadow: rgba(134, 167, 167, 0.5);
+    width: 350px;
+    height: 320px;
+    border-radius: 10px;
+    margin: 0 auto;
+    padding: 40px;
+    text-align: center;
+    position: relative;
+    background-color:rgb(53, 52, 52); 
+    top: 100px;
+    left: 80px;
+    color: rgb(53, 50, 50);
+
+
+
+}
+h2{
+    color: rgb(91, 87, 87);
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    color: rgb(112, 116, 119);
+    border: none;
+}
+.btn{
+    background-color: #7d847d;
+    color: white;
+    padding: 5px ;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+.btn:hover{
+    background-color: #4c5154;
+}
+.inp{
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    margin: 5px;
+}
+/* Media Query for screen width of 768px or smaller (tablet and mobile) */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;  /* Increase container width to take up more space */
+        height: auto;  /* Adjust height for smaller screens */
+        padding: 20px;  /* Decrease padding for mobile-friendly view */
+        top: 50px;  /* Adjust position */
+        left: 10px;  /* Center-align container on smaller screens */
+    }
+
+    h2 {
+        font-size: 18px;  /* Adjust font size for smaller screens */
+    }
+
+    .form {
+        padding: 5px;  /* Reduce form padding for better spacing */
+    }
+
+    .btn {
+        padding: 10px;  /* Increase button padding for better touch targets */
+    }
+}
+
+/* Media Query for screen width of 480px or smaller (mobile) */
+@media (max-width: 480px) {
+    .container {
+        width: 95%;  /* Full width for mobile devices */
+        padding: 15px;  /* Reduced padding for very small screens */
+    }
+
+    h2 {
+        font-size: 16px;  /* Further adjust font size */
+    }
+
+    .form {
+        padding: 10px;  /* Remove additional padding for tight spaces */
+    }
+
+    .btn {
+        padding: 12px;  /* Adjust button size */
+    }
+}
+
